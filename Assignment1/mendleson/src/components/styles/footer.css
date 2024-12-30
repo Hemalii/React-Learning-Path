@@ -1,0 +1,138 @@
+/* Footer Base Styles */
+.footer {
+    background-color: #BFDBFF;
+    padding: 40px 10px;
+    color: black;
+    border: white;
+    border-radius: 10px;
+    justify-content: space-between;
+    
+
+   
+}
+
+.footer h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.footer .space-y-2 {
+    margin-bottom: 1rem;
+}
+
+.footer .text-center {
+    text-align: center;
+}
+
+.footer .md\:text-left {
+    text-align: left;
+}
+
+.footer .text-xl {
+    font-size: 1.25rem;
+}
+
+/* Social Section Styling */
+.social-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-item img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect for Social Section */
+.social-item:hover {
+    color: #007bff;
+    transform: scale(1.05);
+}
+
+.social-item:hover img {
+    transform: scale(1.1);
+}
+
+/* Hover Effect for Explore Section */
+.explore-item {
+    transition: color 0.3s ease;
+}
+
+.explore-item:hover {
+    color: #007bff;
+    cursor: pointer;
+}
+
+/* Hover Effect for Contact and Email Text */
+.footer p:hover,
+.footer h3:hover {
+    color: #007bff;
+}
+
+/* Flex Layout for Footer Sections */
+.footer .col-span-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 10px;
+    width: 23%;
+    /* Each column takes 23% of the width */
+}
+
+.footer .col-span-1 h3 {
+    text-align: center;
+}
+
+.footer ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer li {
+    list-style: none;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer li a:hover {
+    color: #007bff;
+}
+
+/* Improved Layout Styling */
+.footer .grid {
+    gap: 20px;
+}
+
+.footer .grid-cols-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer .col-span-1 {
+    padding: 20px;
+}
+
+.footer .text-center {
+    padding: 10px;
+}
+
+/* Ensure the sections do not stack and appear in a row */
+.footer .col-span-1 {
+    flex: 1 0 23%;
+    /* Ensure each column gets equal width and fits in one row */
+}
+
+.footer .col-span-1:nth-child(4) {
+    /* Adjusting email section width to ensure it aligns with others */
+    flex: 1 0 23%;
+}
