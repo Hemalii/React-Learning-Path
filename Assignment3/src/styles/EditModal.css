@@ -1,0 +1,88 @@
+/* Modal container styling */
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f9f9f9;
+    /* Light background for better contrast */
+    padding: 30px;
+    width: 400px;
+    /* Fixed width for better alignment */
+    max-width: 90%;
+    /* Responsive design for smaller screens */
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    /* Softer shadow */
+    z-index: 1000;
+    font-family: 'Arial', sans-serif;
+    /* Consistent font family */
+}
+
+/* Modal header styling */
+.modal h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Form input styling */
+.modal input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.modal input:focus {
+    border-color: #4caf50;
+    /* Highlight on focus */
+    outline: none;
+}
+
+/* Button container */
+.modal .button-group {
+    display: flex;
+    justify-content: space-between;
+    /* Space out buttons */
+    margin-top: 20px;
+}
+
+/* General button styling */
+.modal button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+/* Save button */
+.modal .save-button {
+    background-color: #97e999;
+    color: black;
+}
+
+.modal .save-button:hover {
+    background-color: #57ce5d;
+}
+
+/* Cancel button */
+.modal .cancel-button {
+    background-color: #e27971;
+    color: white;
+}
+
+.modal .cancel-button:hover {
+    background-color: #f44336;
+}
